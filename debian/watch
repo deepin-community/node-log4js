@@ -1,0 +1,15 @@
+version=4
+opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-log4js-$1/,dversionmangle=auto \
+ https://github.com/nomiddlename/log4js-node/tags .*?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,ctype=nodejs,component=rfdc" \
+ https://registry.npmjs.org/rfdc \
+ https://registry.npmjs.org/rfdc/-/rfdc-(\d[\d\.]*)@ARCHIVE_EXT@ checksum
+
+opts="searchmode=plain,ctype=nodejs,component=streamroller" \
+ https://registry.npmjs.org/streamroller \
+ https://registry.npmjs.org/streamroller/-/streamroller-(\d[\d\.]*)@ARCHIVE_EXT@ checksum
+
+opts="searchmode=plain,ctype=nodejs,component=date-format" \
+ https://registry.npmjs.org/date-format \
+ https://registry.npmjs.org/date-format/-/date-format-(\d[\d\.]*)@ARCHIVE_EXT@ checksum

@@ -1,5 +1,245 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-log4js (6.7.1+~cs8.4.17-1) unstable; urgency=medium
 
-  * Initial release
+  * Set upstream metadata fields: Repository-Browse
+  * New upstream version 6.7.1+~cs8.4.17
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Sat, 03 Dec 2022 18:50:40 +0100
+
+node-log4js (6.7.0+~cs8.4.17-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-log4js: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 14:37:46 +0000
+
+node-log4js (6.7.0+~cs8.4.17-1) unstable; urgency=medium
+
+  * New upstream version 6.7.0+~cs8.4.17
+
+ -- Yadd <yadd@debian.org>  Wed, 05 Oct 2022 08:45:16 +0200
+
+node-log4js (6.6.1+~cs8.4.15-1) unstable; urgency=medium
+
+  * New upstream version 6.6.1+~cs8.4.15
+
+ -- Yadd <yadd@debian.org>  Fri, 29 Jul 2022 09:26:49 +0200
+
+node-log4js (6.6.0+~cs8.4.12-1) unstable; urgency=medium
+
+  * New upstream version 6.6.0+~cs8.4.12
+
+ -- Yadd <yadd@debian.org>  Sat, 09 Jul 2022 09:00:01 +0200
+
+node-log4js (6.5.2+~cs8.4.12-1) unstable; urgency=medium
+
+  * New upstream version 6.5.2+~cs8.4.12
+
+ -- Yadd <yadd@debian.org>  Thu, 09 Jun 2022 09:44:18 +0200
+
+node-log4js (6.4.7+~cs8.3.19-1) unstable; urgency=medium
+
+  * Declare compliance with policy 4.6.1
+  * New upstream version 6.4.7+~cs8.3.19
+
+ -- Yadd <yadd@debian.org>  Sun, 15 May 2022 16:30:10 +0200
+
+node-log4js (6.4.6+~cs8.3.17-1) unstable; urgency=medium
+
+  * New upstream version 6.4.6+~cs8.3.17
+  * Reduce dependencies
+
+ -- Yadd <yadd@debian.org>  Mon, 25 Apr 2022 18:02:50 +0200
+
+node-log4js (6.4.4+~cs8.3.12-1) unstable; urgency=medium
+
+  * Use dh_nodejs_autodocs
+  * New upstream version 6.4.4+~cs8.3.12
+  * Fix test for tap >= 15 (--no-cov -R tap)
+
+ -- Yadd <yadd@debian.org>  Tue, 22 Mar 2022 14:59:33 +0100
+
+node-log4js (6.4.2+~cs8.3.8-1) unstable; urgency=medium
+
+  * New upstream version 6.4.2+~cs8.3.8
+  * Update test
+  * Add privacy patch
+
+ -- Yadd <yadd@debian.org>  Sun, 06 Mar 2022 11:14:04 +0100
+
+node-log4js (6.4.1+~cs8.3.5-1) unstable; urgency=medium
+
+  * Set upstream metadata fields: Security-Contact.
+  * New upstream version 6.4.1+~cs8.3.5
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Jan 2022 21:56:54 +0100
+
+node-log4js (6.4.0+~cs8.3.5-1) unstable; urgency=medium
+
+  * Drop dependency to nodejs
+  * New upstream version 6.4.0+~cs8.3.5
+  * Install docs
+
+ -- Yadd <yadd@debian.org>  Thu, 20 Jan 2022 08:18:19 +0100
+
+node-log4js (6.3.0+repack+~cs6.5.4-1) unstable; urgency=medium
+
+  * Add ctype=nodejs to component(s)
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop component flatted and repack
+  * Add dversionmangle
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 10:16:24 +0100
+
+node-log4js (6.3.0+~cs8.3.10-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * Fix flatted major version to 2
+  * New upstream version 6.3.0+~cs8.3.10: updates log4js 6.3.0
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 23 Nov 2020 17:09:01 +0100
+
+node-log4js (6.2.1+~cs8.3.10-1) unstable; urgency=medium
+
+  * Declare compliance with policy 4.5.0
+  * Update lintian overrides
+  * Use uscan checksum
+  * New upstream version 6.2.1+~cs8.3.10
+    Really 6.2.1+~1.1.4+~2.0.2+~2.2.4+~3.0.0
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 21 May 2020 10:15:02 +0200
+
+node-log4js (6.1.0-1) unstable; urgency=medium
+
+  * New upstream version 6.1.0
+  * Update test: no need to override NODE_PATH with last pkg-js-tools
+  * Switch to debhelper-compat
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 04 Dec 2019 21:54:12 +0100
+
+node-log4js (5.2.1-1) unstable; urgency=medium
+
+  * Declare compliance with policy 4.4.1
+  * New upstream version 5.2.1
+  * Don't launch no-cluster-test due to missing dependency
+  * Add "Rules-Requires-Root
+  * Fix flatted component install
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 10 Oct 2019 20:55:55 +0200
+
+node-log4js (4.5.1-3) unstable; urgency=medium
+
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:43:17 +0200
+
+node-log4js (4.5.1-2) unstable; urgency=medium
+
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Move installed files to /usr/share/nodejs
+  * New upstream version 4.5.1
+  * Update lintian overrides
+  * Switch test to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 15 Jul 2019 17:25:04 +0200
+
+node-log4js (4.5.1-1) unstable; urgency=medium
+
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Move installed files to /usr/share/nodejs
+  * New upstream version 4.5.1
+  * Update lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 15 Jul 2019 17:22:49 +0200
+
+node-log4js (4.0.2-2) unstable; urgency=medium
+
+  * Remove useless link to index.js (Closes: #924200)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 10 Mar 2019 10:51:41 +0100
+
+node-log4js (4.0.2-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control: Drop myself from Uploaders: field.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Change section to javascript
+  * Change priority to optional
+  * Add myself to uploaders (Closes: #921371)
+  * Update VCS fields to salsa
+  * Update debian/copyright
+  * New upstream version 4.0.2
+  * Install components: rfdc, flatted, streamroller and date-format
+  * Add upstream/metadata
+  * Drop patches
+  * Add node-debug, node-fs-extra and node-lodash in dependencies
+  * Update debian/install
+  * Enable upstream tests
+  * Remove test from docs
+  * Update debian/copyright
+  * Hide min.js lintian errors: file is not installed
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 05 Feb 2019 16:34:44 +0100
+
+node-log4js (0.6.18-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/rules:
+    + Add get-orig-source rule.
+  * debian/control:
+    + Bump Standards: to 3.9.5. No changes needed.
+    + Move packaging Git to pkg-javascript namespace on Alioth.
+  * debian/patches:
+    + Refresh and update 001_debian-log4js-examples.patch. Make sure
+      upstream's new example files find the log4js module when installed
+      on Debian.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 20 Aug 2014 14:19:20 +0200
+
+node-log4js (0.6.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add patch: 002_remove_semver_dep.patch. Avoid dependency on
+    node-semver.
+  * /debian/control:
+    + Drop node-semver from Depends: field. (Closes: #722902).
+    + Drop node-dequeue from Depends: field. Removed from dependency
+      list (package.json) since this upstream release.
+    + Add nodejs to Build-Depends: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Oct 2013 23:35:55 +0200
+
+node-log4js (0.6.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * /debian/docs:
+    + Install package.json into doc folder.
+  * /debian/control:
+    + Canonicalize Vcs-*: fields (Alioth Git).
+  * /debian/copyright:
+    + Use short version of Apache-2.0 and refer to
+      common-licenses.
+  * /debian/rules:
+    + Make sure there are no executable files in
+      /usr/lib/nodejs/log4js.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 03 Sep 2013 01:47:34 +0200
+
+node-log4js (0.6.4-1~exp1) experimental; urgency=low
+
+  * Initial release. (Closes: #707883).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 May 2013 15:16:00 +0200

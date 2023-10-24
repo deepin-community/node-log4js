@@ -1,0 +1,17 @@
+Description: drop privacy breach
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-07-09
+
+--- a/docs/_layouts/default.html
++++ b/docs/_layouts/default.html
+@@ -13,9 +13,6 @@
+       href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+     />
+     <meta name="viewport" content="width=device-width" />
+-    <!--[if lt IE 9]>
+-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+-    <![endif]-->
+   </head>
+   <body>
+     <div class="wrapper">
