@@ -1,0 +1,1 @@
+tap -R tap --no-cov --bail `ls test/tap/*.js|xargs grep -L sandboxed|grep -v -f debian/tests/test_excluded`

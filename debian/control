@@ -1,15 +1,46 @@
-Source: template-repository
-Section: unknown
+Source: node-log4js
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs (>= 0.14.5~)
+ , node-async <!nocheck>
+ , node-debug <!nocheck>
+ , node-flatted <!nocheck>
+ , node-fs-extra <!nocheck>
+ , node-lodash <!nocheck>
+ , node-tap <!nocheck>
+ , dh-nodejs
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-log4js
+Vcs-Git: https://salsa.debian.org/js-team/node-log4js.git
+Homepage: https://github.com/nomiddlename/log4js-node
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: node-log4js
+Architecture: all
+Depends: ${misc:Depends}
+ , node-debug
+ , node-flatted
+ , node-fs-extra
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
+Description: Conversion of the log4js framework to work with Node.js
+ Logging support for Node.js based on the log4js Javascript (browser/client)
+ framework.
+ .
+ Supported features:
+ .
+    - coloured console logging
+    - replacement of node's console.log functions (optional)
+    - file appender, with log rolling based on file size
+    - SMTP appender
+    - GELF appender
+    - hook.io appender
+    - multiprocess appender (useful when you've got worker processes)
+    - a logger for connect/express servers
+    - configurable log message layout/patterns
+    - different log levels for different log categories (make some parts
+      of your app log as DEBUG, others only ERRORS, etc.)
